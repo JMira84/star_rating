@@ -20,6 +20,14 @@ const renderStars = () => {
     }
 }
 
+const eventHandler = () => {
+    if (window.screen.width >= 800) {
+        eventListener('mouseenter');
+    } else {
+        eventListener('click');
+    }
+}
+
 const eventListener = (event) => {
     const stars = document.querySelectorAll('.star');
 
@@ -40,14 +48,6 @@ const eventListener = (event) => {
             }
         });
     });
-}
-
-const eventHandler = () => {
-    if (window.screen.width >= 800) {
-        eventListener('mouseenter');
-    } else {
-        eventListener('click');
-    }
 }
 
 window.onload = () => {
