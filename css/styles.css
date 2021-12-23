@@ -78,6 +78,7 @@ table {
 .star {
 	cursor: pointer;
 	-webkit-tap-highlight-color: transparent;
+	user-select: none;
 }
 
 .star.inactive svg {
